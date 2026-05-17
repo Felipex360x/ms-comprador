@@ -1,0 +1,450 @@
+{
+  "info": {
+    "_postman_id": "c8d32b13-c907-4885-8058-682ad00b80a7",
+    "name": "pruebas comprador",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "29078882"
+  },
+  "item": [
+    {
+      "name": "listar comprador",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "13.219.97.37:8084/api/v2/compradores",
+          "host": [
+            "13",
+            "219",
+            "97",
+            "37"
+          ],
+          "port": "8084",
+          "path": [
+            "api",
+            "v2",
+            "compradores"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "listar comprador",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "13.219.97.37:8084/api/v2/compradores",
+              "host": [
+                "13",
+                "219",
+                "97",
+                "37"
+              ],
+              "port": "8084",
+              "path": [
+                "api",
+                "v2",
+                "compradores"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 17 May 2026 21:22:10 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"UsuarioId\": 2,\n        \"nombreUsuario\": null,\n        \"correoUsuario\": null,\n        \"cantidadCompra\": 2,\n        \"historialCompra\": \"mish mihs mihs mish\",\n        \"mayorCompra\": 20000,\n        \"detalleMayor\": \"super pack clasic\",\n        \"menorCompra\": 50000,\n        \"detallemenor\": \"carpeta\"\n    },\n    {\n        \"id\": 2,\n        \"UsuarioId\": 2,\n        \"nombreUsuario\": null,\n        \"correoUsuario\": null,\n        \"cantidadCompra\": 2,\n        \"historialCompra\": \"mish mihs mihs mish\",\n        \"mayorCompra\": 20000,\n        \"detalleMayor\": \"super pack clasic\",\n        \"menorCompra\": 50000,\n        \"detallemenor\": \"carpeta\"\n    },\n    {\n        \"id\": 3,\n        \"UsuarioId\": 2,\n        \"nombreUsuario\": null,\n        \"correoUsuario\": null,\n        \"cantidadCompra\": 2,\n        \"historialCompra\": \"mish mihs mihs mish\",\n        \"mayorCompra\": 20000,\n        \"detalleMayor\": \"super pack clasic\",\n        \"menorCompra\": 50000,\n        \"detallemenor\": \"carpeta\"\n    },\n    {\n        \"id\": 4,\n        \"UsuarioId\": 10,\n        \"nombreUsuario\": null,\n        \"correoUsuario\": null,\n        \"cantidadCompra\": 2,\n        \"historialCompra\": \"mish mihs mihs mish\",\n        \"mayorCompra\": 20000,\n        \"detalleMayor\": \"super pack clasic\",\n        \"menorCompra\": 50000,\n        \"detallemenor\": \"carpeta\"\n    },\n    {\n        \"id\": 5,\n        \"UsuarioId\": 11,\n        \"nombreUsuario\": null,\n        \"correoUsuario\": null,\n        \"cantidadCompra\": 2,\n        \"historialCompra\": \"mish mihs mihs mish\",\n        \"mayorCompra\": 20000,\n        \"detalleMayor\": \"super pack clasic\",\n        \"menorCompra\": 50000,\n        \"detallemenor\": \"carpeta\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "comprador validar",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "13.219.97.37:8084/api/v2/compradores",
+          "host": [
+            "13",
+            "219",
+            "97",
+            "37"
+          ],
+          "port": "8084",
+          "path": [
+            "api",
+            "v2",
+            "compradores"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "comprador validar",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "13.219.97.37:8084/api/v2/compradores",
+              "host": [
+                "13",
+                "219",
+                "97",
+                "37"
+              ],
+              "port": "8084",
+              "path": [
+                "api",
+                "v2",
+                "compradores"
+              ]
+            }
+          },
+          "status": "Bad Request",
+          "code": 400,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 17 May 2026 21:23:13 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"historialCompra\": \"ingrese el historial de las compras\",\n    \"menorCompra\": \"ingrese el valor de la menor compra\",\n    \"detallemenor\": \"ingrese el detalle del porducto con la menor compra\",\n    \"cantidadCompra\": \"ingrese la cantidad de compras realizdas\",\n    \"UsuarioId\": \"ingrea el id del usuario\",\n    \"mayorCompra\": \"ingrese el valor de la mayor compra\",\n    \"detalleMayor\": \"ingrese el detalle del producto mayor comprado\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Crear comprador",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n        \"UsuarioId\": 11,\r\n        \"cantidadCompra\": 2,\r\n        \"historialCompra\": \"mish mihs mihs mish\",\r\n        \"mayorCompra\": 20000,\r\n        \"detalleMayor\": \"super pack clasic\",\r\n        \"menorCompra\": 50000,\r\n        \"detallemenor\": \"carpeta\"\r\n}\r\n\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "13.219.97.37:8084/api/v2/compradores",
+          "host": [
+            "13",
+            "219",
+            "97",
+            "37"
+          ],
+          "port": "8084",
+          "path": [
+            "api",
+            "v2",
+            "compradores"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Crear comprador",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n        \"UsuarioId\": 11,\r\n        \"cantidadCompra\": 2,\r\n        \"historialCompra\": \"mish mihs mihs mish\",\r\n        \"mayorCompra\": 20000,\r\n        \"detalleMayor\": \"super pack clasic\",\r\n        \"menorCompra\": 50000,\r\n        \"detallemenor\": \"carpeta\"\r\n}\r\n\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "13.219.97.37:8084/api/v2/compradores",
+              "host": [
+                "13",
+                "219",
+                "97",
+                "37"
+              ],
+              "port": "8084",
+              "path": [
+                "api",
+                "v2",
+                "compradores"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 17 May 2026 21:27:52 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 6,\n    \"UsuarioId\": 11,\n    \"nombreUsuario\": \"fabian\",\n    \"correoUsuario\": \"fabifabieo@gmail.com\",\n    \"cantidadCompra\": 2,\n    \"historialCompra\": \"mish mihs mihs mish\",\n    \"mayorCompra\": 20000,\n    \"detalleMayor\": \"super pack clasic\",\n    \"menorCompra\": 50000,\n    \"detallemenor\": \"carpeta\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "actualizar comprador",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"UsuarioId\": 6,\r\n    \"cantidadCompra\": 2,\r\n    \"historialCompra\": \"mish mihs mihs mish\",\r\n    \"mayorCompra\": 20000,\r\n    \"detalleMayor\": \"super pack clasic\",\r\n    \"menorCompra\": 50000,\r\n    \"detallemenor\": \"carpeta\"\r\n}\r\n\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "13.219.97.37:8084/api/v2/compradores/3",
+          "host": [
+            "13",
+            "219",
+            "97",
+            "37"
+          ],
+          "port": "8084",
+          "path": [
+            "api",
+            "v2",
+            "compradores",
+            "3"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "actualizar comprador",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"UsuarioId\": 6,\r\n    \"cantidadCompra\": 2,\r\n    \"historialCompra\": \"mish mihs mihs mish\",\r\n    \"mayorCompra\": 20000,\r\n    \"detalleMayor\": \"super pack clasic\",\r\n    \"menorCompra\": 50000,\r\n    \"detallemenor\": \"carpeta\"\r\n}\r\n\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "13.219.97.37:8084/api/v2/compradores/3",
+              "host": [
+                "13",
+                "219",
+                "97",
+                "37"
+              ],
+              "port": "8084",
+              "path": [
+                "api",
+                "v2",
+                "compradores",
+                "3"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 17 May 2026 21:29:17 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 3,\n    \"UsuarioId\": 6,\n    \"nombreUsuario\": \"fabian\",\n    \"correoUsuario\": \"fabi.Lobos@gmail.com\",\n    \"cantidadCompra\": 2,\n    \"historialCompra\": \"mish mihs mihs mish\",\n    \"mayorCompra\": 20000,\n    \"detalleMayor\": \"super pack clasic\",\n    \"menorCompra\": 50000,\n    \"detallemenor\": \"carpeta\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Eliminar comprador",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "file",
+          "file": {}
+        },
+        "url": {
+          "raw": "13.219.97.37:8084/api/v2/compradores/3",
+          "host": [
+            "13",
+            "219",
+            "97",
+            "37"
+          ],
+          "port": "8084",
+          "path": [
+            "api",
+            "v2",
+            "compradores",
+            "3"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Eliminar comprador",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "file",
+              "file": {}
+            },
+            "url": {
+              "raw": "13.219.97.37:8084/api/v2/compradores/3",
+              "host": [
+                "13",
+                "219",
+                "97",
+                "37"
+              ],
+              "port": "8084",
+              "path": [
+                "api",
+                "v2",
+                "compradores",
+                "3"
+              ]
+            }
+          },
+          "status": "No Content",
+          "code": 204,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 17 May 2026 21:30:36 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": null
+        }
+      ]
+    }
+  ]
+}
