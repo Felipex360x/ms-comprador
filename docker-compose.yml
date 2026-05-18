@@ -28,7 +28,7 @@ services:
     depends_on:
       - db-servicio
     environment:
-      - USUARIO_URL=http://44.202.254.160:8080
+      - USUARIO_URL=http://172.31.90.100:8080
     networks:
       - red_interna_proyecto
     # El comando 'tail -f /dev/null' es un truco técnico.
