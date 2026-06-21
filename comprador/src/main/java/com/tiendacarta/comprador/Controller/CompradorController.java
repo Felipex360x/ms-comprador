@@ -53,12 +53,21 @@ public class CompradorController {
         return ResponseEntity.ok(compradorService.findById(id));
     }
 
+
     @Operation(summary = "Registrar nueva Compradores")
     @ApiResponse(responseCode = "201", description = "Compradores creada exitosamente")
+    @ApiResponse(responseCode = "400", description = "Datos de entrada inválidos")
     @PostMapping
-    public ResponseEntity<CompradorDTO> crear(@Valid @RequestBody CompradorCreateDTO dto) {
+    public ResponseEntity<CompradorDTO> crear(
+            @io.swagger.v3.oas.annotations.parameters.RequestBody(
+                description = "Datos del nuevo Compradores"
+            )
+            @Valid @RequestBody CompradorCreateDTO dto) {
         return ResponseEntity.status(HttpStatus.CREATED).body(compradorService.crear(dto));
     }
+
+
+
 
     @Operation(summary = "Eliminar Compradores")
     @ApiResponses({
@@ -77,13 +86,22 @@ public class CompradorController {
         @ApiResponse(responseCode = "404", description = "Compradores no encontrada")
     })
     
+    @Operation(summary = "Actualizar Compradores existente")
+    @ApiResponses({
+        @ApiResponse(responseCode = "200", description = "Actualización exitosa"),
+        @ApiResponse(responseCode = "404", description = "Compradores no encontrada"),
+        @ApiResponse(responseCode = "400", description = "Datos de entrada inválidos")
+    })
     @PutMapping("/{id}")
-    public ResponseEntity<CompradorDTO> actualizar(@Parameter(description = "Ide de la vendedores a actualizar")@PathVariable Long id, @RequestBody CompradorCreateDTO dto){
-        CompradorDTO compradorActualizado = compradorService.actualizar(id, dto);
-        return new ResponseEntity<>(compradorActualizado,HttpStatus.OK);
-
+    public ResponseEntity<CompradorDTO> actualizar(
+            @Parameter(description = "ID del Compradores a actualizar", required = true)
+            @PathVariable Long id,
+            @io.swagger.v3.oas.annotations.parameters.RequestBody(
+                description = "Nuevos datos del Compradores"
+            )
+            @Valid @RequestBody CompradorCreateDTO dto) {
+        return ResponseEntity.ok(compradorService.actualizar(id, dto));
     }
-
 
 
 }
